@@ -80,7 +80,7 @@ p{
 
 
 .main-bg{
-    background-image: url(/landingPage/assets/img/main-bg.svg);
+    background-image: url('../img/main-bg.svg');
     background-size: cover;
     background-position: center center;
     /*color: var(--white-color);*/

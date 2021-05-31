@@ -1,0 +1,65 @@
+.contact-form{
+    grid-column: span 2;
+}
+
+.contact-form .form-grid{
+border: none;           /*tira a borda do formulario*/
+display: flex;          /*coloca os elementos em linha*/
+flex-direction: row;    /*Quebra a linha para telas menores*/
+flex-wrap: wrap;        /*Quebra a linha para telas menores*/
+gap: var()var(--gap);
+}
+
+.form-group{
+    flex: 1 1 320px;
+    padding: 1.5rem 2rem;
+}
+
+.form-grid legend{
+    padding: 1.5rem 2rem;
+    font-style: italic;
+    font-size: 2rem;
+}
+
+.form-group label{
+    display: block; /*Deixa a label acima do campo de preenchimento*/
+    margin-bottom: 1rem;
+}
+
+.form-group input,.form-group textarea{
+    border: none; /*tira a borda dos campos de preenchimento*/
+    background: var(--white-color);
+    padding: 1.5rem 2rem;
+    width: 100%;
+    box-sizing: border-box; /*para que o input respeite tambem o padding, caso contrario vai emendar tudo*/
+    font-size: 2rem;
+    outline: none; /*tira a borda quando clicado com mouse no campo input*/
+}
+
+.form-group input:focus,.form-group textarea:focus{
+    box-shadow: 0 0 10px 2px var(--secondary-color); /*efeito de sombra quando clicado com mouse no campo input*/
+}
+
+.full-width{
+    width: 100%;
+    flex: 1 1 100%;
+}
+
+.form-group button{
+    border: 0.2rem solid var(--white-color);
+    background:none;
+    color: var(--white-color);
+    padding: 1rem 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+
+.form-group button:hover{
+background: var(--white-color);
+color: var(--primary-color);    
+}
+
+.form-group ::placeholder{
+    color: var(--light-gray-color); /*informa uma cor mais suave para o placeholder*/
+}

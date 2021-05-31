@@ -1,0 +1,114 @@
+:root{                          /*Variavel no css*/
+    --primary-color: #08053E; /*Criamos uam variavel que realaciona com a cor mencionada */
+    --secondary-color: crimson;
+    --white-color: #FFFFFF;
+    --light-gray-color: #EEEEEE;
+    --gap: 3rem;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    color: var(--primary-color);
+}
+
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+h1{
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+
+
+h2{
+    font-size: 6rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;   
+}
+
+
+h3{
+    font-size: 5rem;
+}
+
+
+h4{
+    font-size: 4.5rem;
+}
+
+
+h5{
+    font-size: 4rem;
+}
+
+
+h6{
+    font-size: 3.5rem;
+}
+
+
+p{
+    margin-bottom: 3rem;
+}
+
+
+.white-bg{
+    background-color: var(--white-color);
+    color: var(--primary-color);
+}
+
+
+.main-bg{
+    background-image: url(/landingPage/assets/img/main-bg.svg);
+    background-size: cover;
+    background-position: center center;
+    color: var(--white-color);
+}
+
+
+.main-content{
+    max-width: 120rem;
+    margin: 0 auto;         /*Para centralizar texto*/
+    padding: 10rem var(--gap);   /*Para dar espaçamento nos cantos*/
+}
+
+
+.section{
+    min-height: 100vh; /*define a tela inteira com o conteudo*/
+}
+
+.back-to-top{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: white;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--primary-color);
+    transform: rotate(-90deg);
+    font-size: 2rem;
+    border: 0.1rem solid var(--primary-color);
+}
+

@@ -1,0 +1,14 @@
+.gallery-img{
+width: 100%;
+max-width: 36rem;
+max-height: 36rem;
+overflow: hidden; /*Caso passe o tamnho da tela vai cortando a imagem para caber na tela*/
+}
+
+.gallery-img img{
+    transition: all 300ms ease-in-out; /*suaviza o movimento do hover abaixo*/
+}
+
+.gallery-img img:hover{
+    transform: translate(-3%, 3%) scale(1.2) rotate(5deg); /*desloca a imagem 3% para esq e para baixo e depois aumentar a escala  e rotacionar 5graus*/
+}

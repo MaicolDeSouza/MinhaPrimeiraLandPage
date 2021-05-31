@@ -1,0 +1,63 @@
+.close-menu{   /*esconde o checkbox criado apenas para botao menu quando tela menor que 800px*/
+    display: none;
+}
+
+/*media querie que adapta alguns elementos caso a tela fique menor que 800px*/
+@media (max-width: 800px){
+.intro-content, .grid{
+    grid-template-columns: 1fr;
+}
+
+.gallery-img{
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.menu{
+    bottom: 0;
+    text-align: center;
+}
+.menu-content, .menu-content ul{
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu-content{
+    height: 100vh;
+}
+
+.menu{
+    display: none;
+}
+
+.close-menu-label::after{
+    content: '☰' ;
+    position: fixed;
+    z-index: 2;
+    top: 2rem;
+    right: 2rem;
+    background:  #08053E;
+    color:white;
+    font-size: 3rem;
+    line-height: 3rem;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.close-menu:checked~.menu{
+    display: block;
+}
+
+.close-menu:checked~.close-menu-label::after{
+    content: 'x';
+}
+
+.menu-spacing{
+    display: none;
+}
+
+}

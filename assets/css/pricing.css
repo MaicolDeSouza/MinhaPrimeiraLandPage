@@ -1,0 +1,29 @@
+.responsive-table{
+    overflow: hidden; /*Para mostrar a barra na parte inferior da tabela*/
+    overflow-x: auto; /*Para mostrar a barra na parte inferior da tabela*/
+}
+
+table{
+    min-width: 360px; /*largura minima da tabel se ficar abaixo disso aplica os parametros do .responsive-table*/
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table caption{
+    font-style: italic;
+    font-size: 1.6rem ;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+table td, table th{
+    white-space: nowrap; /*evita que o texto quebre*/
+    padding: 1rem;
+    text-align: left;
+    border: 0.1rem solid var(--light-gray-color);
+}
+
+
+tfoot td, table th{
+    background: var(--light-gray-color);
+}

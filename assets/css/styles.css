@@ -23,7 +23,8 @@ html{
 body{
     font-family: 'Open Sans', sans-serif;
     font-size: 1.6rem;
-    color: var(--primary-color);
+    /*color: var(--primary-color);*/
+    color: #08053E;
 }
 
 
@@ -71,8 +72,10 @@ p{
 
 
 .white-bg{
-    background-color: var(--white-color);
-    color: var(--primary-color);
+    /*background-color: var(--white-color);*/
+    background-color: #FFFFFF;
+    /*color: var(--primary-color);*/
+    color: #08053E;
 }
 
 
@@ -80,7 +83,8 @@ p{
     background-image: url(/landingPage/assets/img/main-bg.svg);
     background-size: cover;
     background-position: center center;
-    color: var(--white-color);
+    /*color: var(--white-color);*/
+    color:  #FFFFFF;;
 }
 
 
